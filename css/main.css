@@ -134,14 +134,14 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0 3.6rem 0 2.5rem;
+  padding: 0 2rem 0 2.5rem;
   position: absolute;
   bottom: 12px;
 }
 
 .main__content__buttons__container {
-  height: 70px;
-  width: 70px;
+  height: 80px;
+  width: 80px;
   background-color: var(--white);
   border-radius: 50%;
   display: flex;
@@ -156,9 +156,9 @@
   padding: .8rem;
 }
 
-.scissor-border {
-  width: 95px;
-  height: 95px;
+.scissors-border {
+  width: 110px;
+  height: 110px;
   background: linear-gradient(var(--scissors-gradient));
   border-radius: 50%;
   display: flex;
@@ -167,8 +167,8 @@
 }
 
 .spock-border {
-  width: 95px;
-  height: 95px;
+  width: 110px;
+  height: 110px;
   background: linear-gradient(var(--cyan));
   border-radius: 50%;
   display: flex;
@@ -177,8 +177,8 @@
 }
 
 .paper-border {
-  width: 95px;
-  height: 95px;
+  width: 110px;
+  height: 110px;
   background: linear-gradient(var(--paper-gradient));
   border-radius: 50%;
   display: flex;
@@ -187,8 +187,8 @@
 }
 
 .lizard-border {
-  width: 95px;
-  height: 95px;
+  width: 110px;
+  height: 110px;
   background: linear-gradient(var(--lizard-gradient));
   border-radius: 50%;
   display: flex;
@@ -197,8 +197,8 @@
 }
 
 .rock-border {
-  width: 95px;
-  height: 95px;
+  width: 110px;
+  height: 110px;
   background: linear-gradient(var(--rock-gradient));
   border-radius: 50%;
   display: flex;
@@ -256,4 +256,31 @@
 
 .rule-exit:hover {
   cursor: pointer;
+}
+
+/* Round Section */
+.round {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-round {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: .8rem;
+}
+
+.round__text {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Hidden */
+.hidden {
+  display: none;
 }
