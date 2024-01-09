@@ -86,7 +86,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  position: relative;
 }
 
 .main__content {
@@ -95,6 +96,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.main__false {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
   position: relative;
 }
 
@@ -206,6 +216,23 @@
   align-items: center;
 }
 
+.waiting {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.waiting__border {
+  width: 110px;
+  height: 110px;
+  background: var(--dark-text);
+  border-radius: 50%;
+}
+
 .footer {
   height: 25%;
   width: 100%;
@@ -260,7 +287,15 @@
 
 /* Round Section */
 .round {
-  height: 100%;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.round2 {
+  height: 50%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -275,9 +310,50 @@
   gap: .8rem;
 }
 
+.container-round2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: .8rem;
+}
+
 .round__text {
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+/* Section buttons */
+
+.container-buttons {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  gap: 1rem;
+  bottom: 0;
+}
+
+.container-buttons__text {
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.container-buttons__button {
+  border: none;
+  color: var(--dark-text);
+  text-transform: uppercase;
+  padding: .8rem 3.5rem;
+  border-radius: 8px;
+  letter-spacing: 2px;
+}
+
+.container-buttons__button:hover {
+  cursor: pointer;
 }
 
 /* Hidden */
