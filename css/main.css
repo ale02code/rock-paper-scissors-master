@@ -1,0 +1,112 @@
+:root {
+  /* Primary */
+  --scissors-gradient: hsl(39, 89%, 49%), hsl(40, 84%, 53%);
+  --paper-gradient: hsl(230, 89%, 62%), hsl(230, 89%, 65%);
+  --rock-gradient: hsl(349, 71%, 52%), hsl(349, 70%, 56%);
+  --lizard-gradient: hsl(261, 73%, 60%), hsl(261, 72%, 63%);
+  --cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%);
+
+  /* Neutral */
+  --dark-text: hsl(229, 25%, 31%);
+  --score-text: hsl(229, 64%, 46%);
+  --header-outline: hsl(217, 16%, 45%);
+
+  /* Background */
+  --background-gradient: hsl(214, 47%, 23%), hsl(237, 49%, 15%);
+
+  /* Color text */
+  --white: #fff;
+}
+
+.body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(var(--background-gradient));
+  overflow-x: hidden;
+  color: var(--white);
+}
+
+.header {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.header__content {
+  width: 90%;
+  height: 90%;
+  max-height: 100px;
+  border: var(--header-outline) 3px solid;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  padding: .8rem;
+}
+
+.header__content__title__item {
+  font-weight: bolder;
+  font-size: 14px;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.header__content__score-container {
+  height: 100%;
+  width: 25%;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 120px;
+  border-radius: 6px;
+}
+
+.header__content__score-container__title {
+  letter-spacing: 2px;
+  color: var(--score-text);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.header__content__score-container__number {
+  color: var(--dark-text);
+  font-size: 36px;
+  line-height: 30px;
+}
+
+.main {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__rules {
+  border: var(--white) 2px solid;
+  border-radius: 8px;
+  padding: 10px 3rem;
+  background-color: transparent;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: var(--white);
+  letter-spacing: 3px;
+}
+
+.footer__rules {
+  cursor: pointer;
+}
