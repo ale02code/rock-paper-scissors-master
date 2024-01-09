@@ -4,7 +4,7 @@
   --paper-gradient: hsl(230, 89%, 62%), hsl(230, 89%, 65%);
   --rock-gradient: hsl(349, 71%, 52%), hsl(349, 70%, 56%);
   --lizard-gradient: hsl(261, 73%, 60%), hsl(261, 72%, 63%);
-  --cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%);
+  --cyan: hsl(189, 59%, 53%), hsl(189, 58%, 57%);
 
   /* Neutral */
   --dark-text: hsl(229, 25%, 31%);
@@ -38,7 +38,7 @@
 .header__content {
   width: 90%;
   height: 90%;
-  max-height: 100px;
+  max-height: 110px;
   border: var(--header-outline) 3px solid;
   border-radius: 8px;
   display: flex;
@@ -71,6 +71,7 @@
   letter-spacing: 2px;
   color: var(--score-text);
   text-transform: uppercase;
+  font-weight: bolder;
   font-size: 12px;
 }
 
@@ -83,6 +84,123 @@
 .main {
   height: 50%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.main__content__background {
+  position: absolute;
+  max-width: 460px;
+  width: 65%;
+  object-fit: cover;
+}
+
+.main__content__buttons {
+  height: 85%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.main__content__buttons__scissors-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 12px;
+}
+
+.main__content__buttons__paperAndspock-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.main__content__buttons__rockAndlizard-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3.6rem 0 2.5rem;
+  position: absolute;
+  bottom: 12px;
+}
+
+.main__content__buttons__container {
+  height: 70px;
+  width: 70px;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.option {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  padding: .8rem;
+}
+
+.scissor-border {
+  width: 95px;
+  height: 95px;
+  background: linear-gradient(var(--scissors-gradient));
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spock-border {
+  width: 95px;
+  height: 95px;
+  background: linear-gradient(var(--cyan));
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paper-border {
+  width: 95px;
+  height: 95px;
+  background: linear-gradient(var(--paper-gradient));
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lizard-border {
+  width: 95px;
+  height: 95px;
+  background: linear-gradient(var(--lizard-gradient));
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rock-border {
+  width: 95px;
+  height: 95px;
+  background: linear-gradient(var(--rock-gradient));
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
