@@ -441,6 +441,16 @@
 }
 
 @media screen and (min-width: 500px) {
+
+  .body {
+    justify-content: space-evenly;
+  }
+
+
+  .header {
+    align-items: start;
+  }
+
   .header__content {
     max-width: 600px;
   }
