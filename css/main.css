@@ -447,6 +447,7 @@
 
   .main {
     height: 70%;
+    max-height: 420px;
   }
 
   .main__false {
