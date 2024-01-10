@@ -35,11 +35,10 @@ const computerSelection = () => {
 }
 
 const waiting = document.createElement('section');
+const borderShadow = document.createElement('div');
+const textWaiting = document.createElement('p');
 
 const waitingSection = () => {
-  const borderShadow = document.createElement('div');
-  const textWaiting = document.createElement('p');
-
   textWaiting.textContent = "the house picked";
   waiting.classList.add("waiting");
   borderShadow.classList.add("waiting__border");
@@ -123,11 +122,13 @@ containerButtons.appendChild(buttonAgain);
 
 const playRound = (computerRes) => {
   mainContent.classList.add("hidden");
+  round.classList.remove("hidden");
   createOptionRound(playerSelection, 'you picked');
   waitingSection();
 
   setTimeout(() => {
     waiting.classList.add("hidden");
+    round2.classList.remove("hidden");
     createOptionRound2(computerRes, 'the house picked');
     result(computerRes);
 
@@ -163,6 +164,7 @@ options.forEach(opt => {
   opt.addEventListener("click", () => {
     main.style.display = "flex"
     playerSelection = opt.id;
+    waiting.classList.remove("hidden");
     const res = computerSelection()
     playRound(res);
   })
@@ -171,6 +173,8 @@ options.forEach(opt => {
 main.style.display = "none"
 
 buttonAgain.addEventListener("click", () => {
+  round.classList.add("hidden");
+  round2.classList.add("hidden");
   containerButtons.classList.add("hidden");
   main.style.display = "none"
   mainContent.classList.remove("hidden");
