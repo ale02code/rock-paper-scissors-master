@@ -561,7 +561,7 @@
   .rule-container {
     position: absolute;
     background-color: rgba(0, 0, 0, .5);
-    display: flex;
+    display: none;
   }
 
   .rule-content {
