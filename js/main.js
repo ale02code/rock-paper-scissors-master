@@ -68,13 +68,15 @@ const createOptionRound = (section, text) => {
 
   round.classList.add("round");
   containerRound.classList.add("container-round");
-  roundButtonsContainer.classList.add("main__content__buttons__container");
+  roundButtonsContainer.classList.add("main__content__buttons__container-2");
   roundImage.classList.add("option");
   roundText.classList.add("round__text");
 
   roundText.textContent = text;
-  roundBorder.classList.remove("rock-border", "paper-border", "scissors-border", "spock-border", "lizard-border");
-  roundBorder.classList.add(`${section}-border`);
+  while (roundBorder.classList.length > 0) {
+    roundBorder.classList.remove(roundBorder.classList.item(0));
+  }
+  roundBorder.classList.add(`${section}-border-2`);
   roundImage.src = `images/icon-${section}.svg`;
 }
 
@@ -95,13 +97,15 @@ const createOptionRound2 = (section, text) => {
 
   round2.classList.add("round2");
   containerRound2.classList.add("container-round2");
-  roundButtonsContainer2.classList.add("main__content__buttons__container");
+  roundButtonsContainer2.classList.add("main__content__buttons__container-2");
   roundImage2.classList.add("option");
   roundText2.classList.add("round__text");
 
   roundText2.textContent = text;
-  roundBorder2.classList.remove("rock-border", "paper-border", "scissors-border", "spock-border", "lizard-border");
-  roundBorder2.classList.add(`${section}-border`);
+  while (roundBorder2.classList.length > 0) {
+    roundBorder2.classList.remove(roundBorder2.classList.item(0));
+  }
+  roundBorder2.classList.add(`${section}-border-2`);
   roundImage2.src = `images/icon-${section}.svg`;
 }
 

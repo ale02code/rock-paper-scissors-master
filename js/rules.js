@@ -5,6 +5,8 @@ const buttonToRules = document.querySelector('.footer__rules');
 
 const ruleContainer = document.createElement('section');
 ruleContainer.classList.add('rule-container');
+const ruleContent = document.createElement('div');
+ruleContent.classList.add('rule-content');
 
 const ruleTitle = document.createElement('h2');
 ruleTitle.textContent = 'Rules';
@@ -29,6 +31,7 @@ buttonToRules.addEventListener('click', () => {
 })
 
 body.appendChild(ruleContainer);
-ruleContainer.appendChild(ruleTitle);
-ruleContainer.appendChild(ruleImage);
-ruleContainer.appendChild(ruleExit);
+ruleContainer.appendChild(ruleContent);
+ruleContent.appendChild(ruleTitle);
+ruleContent.appendChild(ruleImage);
+ruleContent.appendChild(ruleExit);
