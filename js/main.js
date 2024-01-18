@@ -141,6 +141,9 @@ const playRound = (computerRes) => {
       scoreContainer.textContent = score;
       containerButtons.classList.remove("hidden");
       textButtons.textContent = "you win";
+    } else if (result(computerRes) == 'tie') {
+      containerButtons.classList.remove("hidden");
+      textButtons.textContent = "draw"
     } else {
       textButtons.textContent = "you lose";
       containerButtons.classList.remove("hidden");
